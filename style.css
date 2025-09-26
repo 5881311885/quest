@@ -33,34 +33,35 @@ body {
   max-width: 80%;
 }
 
-/* Menu Buttons (side by side) */
+/* Menu Buttons (vertical layout now) */
 .menu {
   position: absolute;
   top: 60%;
   width: 100%;
   display: flex;
-  flex-direction: row; /* side by side */
-  justify-content: center;
-  gap: 20px; /* space between buttons */
+  flex-direction: column; /* vertical now */
+  align-items: center;    /* center them horizontally */
+  gap: 20px;              /* space between buttons */
 }
 
-/* Button Styles */
+/* Button Styles – dark yellow, nontransparent */
 .menu button {
-  width: 180px;
+  width: 220px; /* a little wider for vertical stack */
   padding: 20px 0;
-  font-size: 14px; /* retro font looks smaller */
-  font-family: 'Press Start 2P', cursive; /* force font on buttons */
-  color: white;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid white;
+  font-size: 14px;
+  font-family: 'Press Start 2P', cursive; /* force retro font */
+  color: black; /* text color contrasts yellow */
+  background-color: #b8860b; /* dark goldenrod yellow */
+  border: 2px solid #000; /* black border for retro style */
   cursor: pointer;
   transition: 0.3s;
   text-transform: uppercase;
+  border-radius: 0; /* square edges; change to 8px for slightly rounded */
 }
 
 /* Button Hover Effect */
 .menu button:hover {
-  background-color: white;
+  background-color: #ffcc00; /* brighter yellow on hover */
   color: black;
   transform: scale(1.05);
 }
