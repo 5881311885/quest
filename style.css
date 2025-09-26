@@ -1,31 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-
+/* General Body Style */
 body {
   margin: 0;
   padding: 0;
   overflow: hidden;
   background: black;
-  font-family: 'Press Start 2P', cursive; /* THIS is the important part */
+  font-family: 'Press Start 2P', cursive;
+  color: white;
 }
-/* Animated gradient background */
+
+/* Animated Background GIF (zoomed 110%) */
 #background {
   position: fixed;
-  top: 0; 
+  top: 0;
   left: 0;
-  width: 100%; 
+  width: 100%;
   height: 100%;
-  background: url('background.gif') center center / 110% no-repeat; /* zoomed in 110% */
+  background: url('background.gif') center center / 110% no-repeat;
   z-index: -1;
 }
 
-
-@keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
+/* Logo Container */
 .logo-container {
   position: absolute;
   top: 30%;
@@ -33,25 +27,29 @@ body {
   text-align: center;
 }
 
+/* Logo 30% bigger */
 .logo {
-  width: 333px; /* was 300px, 30% bigger */
+  width: 390px; /* was 300px */
   max-width: 80%;
 }
 
+/* Menu Buttons (side by side) */
 .menu {
   position: absolute;
   top: 60%;
   width: 100%;
   display: flex;
-  flex-direction: row;      /* back to side by side horizontally */
-  justify-content: center; 
-  gap: 20px;               /* space between buttons */
+  flex-direction: row; /* side by side */
+  justify-content: center;
+  gap: 20px; /* space between buttons */
 }
 
+/* Button Styles */
 .menu button {
   width: 180px;
   padding: 20px 0;
-  font-size: 14px;          /* retro font looks smaller so adjust as needed */
+  font-size: 14px; /* retro font looks smaller */
+  font-family: 'Press Start 2P', cursive; /* force font on buttons */
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid white;
@@ -60,9 +58,9 @@ body {
   text-transform: uppercase;
 }
 
+/* Button Hover Effect */
 .menu button:hover {
   background-color: white;
   color: black;
   transform: scale(1.05);
 }
-
