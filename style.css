@@ -71,3 +71,26 @@ radius: 0; /* square edges; change to 8px for slightly rounded */
   transform: scale(1.05);
 }
 
+.corner-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10; /* on top of everything */
+}
+
+.corner-button button {
+  width: 50px;
+  height: 50px;
+  background-image: url('button.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent; /* transparent fallback */
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.corner-button button:hover {
+  transform: scale(1.1);
+}
+
