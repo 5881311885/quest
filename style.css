@@ -99,10 +99,21 @@ footer {
   bottom: 10px;
   width: 100%;
   text-align: center;
-  font-size: 10px;
+  font-size: 8px; /* smaller text */
   font-family: 'Press Start 2P', cursive;
   color: white;
+  line-height: 1.4; /* a bit of spacing */
 }
+
+footer a {
+  color: #ffcc00; /* link color */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 
 footer a {
   color: #ffcc00; /* link color */
