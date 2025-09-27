@@ -22,10 +22,11 @@ body {
 /* Logo Container */
 .logo-container {
   position: absolute;
-  top: 30%;
+  top: 25%; /* was 30% */
   width: 100%;
   text-align: center;
 }
+
 
 /* Logo 30% bigger */
 .logo {
@@ -52,7 +53,7 @@ body {
   font-family: 'Press Start 2P', cursive; /* force retro font */
   color: black; /* text color contrasts yellow */
   background-color: #b8860b; /* dark goldenrod yellow */
-  border: 2px solid #000; /* black border for retro style */
+  border: none; /* black border for retro style */
   cursor: pointer;
   transition: 0.3s;
   text-transform: uppercase;
