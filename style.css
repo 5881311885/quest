@@ -47,22 +47,27 @@ body {
 
 /* Button Styles – dark yellow, nontransparent */
 .menu button {
-  width: 220px; /* a little wider for vertical stack */
+  width: 220px;
   padding: 20px 0;
   font-size: 14px;
-  font-family: 'Press Start 2P', cursive; /* force retro font */
-  color: black; /* text color contrasts yellow */
-  background-color: #b8860b; /* dark goldenrod yellow */
-  border: none; /* black border for retro style */
+  font-family: 'Press Start 2P', cursive;
+  color: black;
+  background-color: #b8860b; /* fallback color */
+  background-image: url('texture.png'); /* your texture */
+  background-size: cover; /* scale texture to fit */
+  background-repeat: no-repeat;
+  border: none;
   cursor: pointer;
   transition: 0.3s;
   text-transform: uppercase;
-  border-radius: 0; /* square edges; change to 8px for slightly rounded */
+  border-radius: 0;
+}
+radius: 0; /* square edges; change to 8px for slightly rounded */
 }
 
 /* Button Hover Effect */
 .menu button:hover {
-  background-color: #ffcc00; /* brighter yellow on hover */
-  color: black;
+  filter: brightness(1.2); /* lightens texture */
   transform: scale(1.05);
 }
+
